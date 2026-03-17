@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Zistí cestu k priečinku, kde sa nachádza tento skript
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
+# Prepne pracovný adresár do priečinka skriptu
+cd "$SCRIPT_DIR"
+
 # --- KONFIGURÁCIA ---
 SOL_COMPILER="../proj/sol2xml/sol_to_xml.py"
 MY_INTERPRETER="../proj/python/int/src/solint.py"
