@@ -1,0 +1,1 @@
+34 idk? 35 mi generovalo nejaku picovinu zatial som to tam nedal
