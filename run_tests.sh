@@ -55,9 +55,9 @@ for test_file in "${FILES[@]}"; do
     # 1. KROK: Preklad do XML
     # Pri debugu necháme vidieť aj chyby kompilátora
     if [ -n "$SINGLE_TEST" ]; then
-        python3 "$SOL_COMPILER" "$test_file" > "$TEMP_XML"
+        python "$SOL_COMPILER" "$test_file" > "$TEMP_XML"
     else
-        python3 "$SOL_COMPILER" "$test_file" > "$TEMP_XML" 2>/dev/null
+        python "$SOL_COMPILER" "$test_file" > "$TEMP_XML" 2>/dev/null
     fi
 
     if [ $? -ne 0 ]; then
@@ -68,11 +68,11 @@ for test_file in "${FILES[@]}"; do
     # 2. KROK: Spustenie interpreta
     if [ -n "$SINGLE_TEST" ]; then
         # V debug móde: Vidíme stdout aj stderr priamo v konzole
-        python3 "$MY_INTERPRETER" -s "$TEMP_XML" | tee "$OUT_DIR/$base_name.out"
+        python "$MY_INTERPRETER" -s "$TEMP_XML" | tee "$OUT_DIR/$base_name.out"
         actual_rc=${PIPESTATUS[0]} # Získame RC interpreta, nie príkazu tee
     else
         # V štandardnom móde: Všetko ticho do súboru
-        python3 "$MY_INTERPRETER" -s "$TEMP_XML" > "$OUT_DIR/$base_name.out" 2>/dev/null
+        python "$MY_INTERPRETER" -s "$TEMP_XML" > "$OUT_DIR/$base_name.out" 2>/dev/null
         actual_rc=$?
     fi
 
