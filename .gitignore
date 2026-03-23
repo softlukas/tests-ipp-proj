@@ -1,2 +1,4 @@
 diff/
 out/
+*.json
+*.xml
