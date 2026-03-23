@@ -1,8 +1,10 @@
 class Main : Object {
 run [|
 a := self foo: 4. "a = instance 14"
+_ := (a asString) print.
 b := [ :x | _ := 42. ]. "b = instance Block"
 c := b value: 16. "c = instance 42"
+_ := (c asString) print.
 d := 'ahoj' print.] "d = instance 'ahoj' - print vrací self, viz Vestavěné
 třídy"
 foo: [ :x |
