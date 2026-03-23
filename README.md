@@ -1,4 +1,4 @@
-# Spustenie
+# Spustenie - using for python interpret only
 
 V subore `run_test.sh` nastavte premnnu `SOL_COMPILER` na cestu k prekladacu sol -> xml ktore mame od nich.
 Premennu `MY_INTERPRETER` nastavte na cestu k vasmu python interpretu.
