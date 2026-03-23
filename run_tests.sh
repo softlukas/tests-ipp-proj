@@ -105,5 +105,5 @@ for test_file in "${FILES[@]}"; do
     fi
 done
 
-#rm -f "$TEMP_XML"
+rm -f "$TEMP_XML"
 echo "------------------------------------------------"

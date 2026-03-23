@@ -3,7 +3,7 @@
 V subore `run_test.sh` nastavte premnnu `SOL_COMPILER` na cestu k prekladacu sol -> xml ktore mame od nich.
 Premennu `MY_INTERPRETER` nastavte na cestu k vasmu python interpretu.
 
-`./run_tests.sh` vám spustí všetky testy. Test `blok_jako_objekt.sol` zadajte ako input `ahoj`.
+`./run_tests.sh` vám spustí všetky testy. Pri teste `blok_jako_objekt.sol` zadajte ako input `ahoj`.
 
 ## Príklad výstupu
 
