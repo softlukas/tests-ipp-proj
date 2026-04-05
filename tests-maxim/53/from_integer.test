@@ -1,0 +1,13 @@
++++ CODE_53
+*** Test of error with code 53 (Constructor from: internal attribute mismatch)
+!C! 0
+!I! 53
+>>> 1
+
+class Main : Object {
+  run [|
+    "Integer má interný atribut (hodnotu), String literál 'abc' ho nemá.
+     Kopírovanie zlyhá s chybou 53."
+    x := Integer from: 'abc'.
+  ]
+}

@@ -1,0 +1,11 @@
++++ CODE_32
+*** Test of undefined variable
+!C! 0
+!I! 32
+>>> 1
+
+class Main : Object {
+  run [|
+    a := b.
+  ]
+}

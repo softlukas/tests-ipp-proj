@@ -1,0 +1,27 @@
++++ BUILT_IN_OBJECT
+*** Test of built in function
+!C! 0
+!I! 0
+>>> 1
+
+class Main : Object {
+  run [|
+    a := Main.
+    _ := self p: (a isNumber).
+
+    a := Main.
+    _ := self p: (a isString).
+
+    a := Main.
+    _ := self p: (a isBlock).
+
+    a := Main.
+    _ := self p: (a isNil).
+
+
+  ]
+
+  p: [:x|
+    _ := (x asString) print.
+  ]
+}

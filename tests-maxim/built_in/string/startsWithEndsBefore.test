@@ -1,0 +1,25 @@
++++ BUILT_IN_STRING
+*** Test of substring extraction
+!C! 0
+!I! 0
+>>> 1
+
+class Main : Object {
+  run [|
+    res := 'Hello' startsWith: 1 endsBefore: 3.
+    _ := self p: res.
+
+    res := 'Hello' startsWith: 1 endsBefore: 1.
+    _ := self p: res.
+
+    res := 'Hi' startsWith: 1 endsBefore: 10.
+    _ := self p: res.
+
+    res := 'Hello' startsWith: 0 endsBefore: 2.
+    _ := self p: res.
+  ]
+
+  p: [:x|
+    _ := (x asString) print.
+  ]
+}

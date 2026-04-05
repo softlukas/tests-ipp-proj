@@ -1,0 +1,18 @@
++++ CODE_54
+*** Test of error with code 54 (Instance attribute collision with method)
+!C! 0
+!I! 54
+>>> 1
+
+class Main : Object {
+  run [|
+    "Trída definuje metódu 'foo'. Pokus o vytvorenie atribútu 'foo'
+     pomocou správy 'foo:' spôsobí kolíziu a chybu 54."
+    _ := self foo: 10.
+  ]
+
+  foo [|
+    "Bezparametrická metóda foo"
+    _ := 'method foo'.
+  ]
+}

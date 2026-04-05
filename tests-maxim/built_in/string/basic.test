@@ -1,0 +1,28 @@
++++ BUILT_IN_STRING
+*** Test of string equality and concatenation
+!C! 0
+!I! 0
+>>> 1
+
+class Main : Object {
+  run [|
+    res := 'hello' equalTo: 'hello'.
+    _ := self p: res.
+
+    res := 'hello' equalTo: 'world'.
+    _ := self p: res.
+
+    res := 'Hello' concatenateWith: 'World'.
+    _ := self p: res.
+
+    res := 'Hello' concatenateWith: 123.
+    _ := self p: res.
+
+    res := 'test' asString.
+    _ := self p: res.
+  ]
+
+  p: [:x|
+    _ := (x asString) print.
+  ]
+}

@@ -1,0 +1,13 @@
++++ CODE_51_BLOCK_ARITY_MISMATCH
+*** Test of error with code 51 (Block value message arity mismatch)
+!C! 0
+!I! 51
+>>> 1
+
+class Main : Object {
+  run [|
+    "Blok nemá parametre, ale voláme ho s argumentom value:"
+    b := [| _ := 1. ].
+    _ := b value: 10.
+  ]
+}

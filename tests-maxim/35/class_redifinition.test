@@ -1,0 +1,13 @@
++++ CODE_35
+*** Test of error with code 35
+!C! 0
+!I! 35
+>>> 1
+
+class Main : Object {
+  run [|
+  ]
+}
+
+class Main : Object {
+}

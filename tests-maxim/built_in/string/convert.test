@@ -1,0 +1,25 @@
++++ BUILT_IN_STRING
+*** Test of string to integer conversion
+!C! 0
+!I! 0
+>>> 1
+
+class Main : Object {
+  run [|
+    res := '123' asInteger.
+    _ := self p: res.
+
+    res := '-42' asInteger.
+    _ := self p: res.
+
+    res := 'abc' asInteger.
+    _ := self p: res.
+
+    res := '10x' asInteger.
+    _ := self p: res.
+  ]
+
+  p: [:x|
+    _ := (x asString) print.
+  ]
+}

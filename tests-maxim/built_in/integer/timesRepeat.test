@@ -1,0 +1,19 @@
++++ BUILT_IN_INTEGER
+*** Test of arithmetic and comparison
+!C! 0
+!I! 0
+>>> 1
+
+class Main : Object {
+  run [|
+    block := [:x| y := self p: x.].
+
+    x := 10 timesRepeat: block.
+    x := -1 timesRepeat: block.
+    y := self p: x.
+  ]
+
+  p: [:x|
+    _ := (x asString) print.
+  ]
+}

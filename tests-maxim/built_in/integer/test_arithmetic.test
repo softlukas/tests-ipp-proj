@@ -1,0 +1,31 @@
++++ BUILT_IN_INTEGER
+*** Test of arithmetic and comparison
+!C! 0
+!I! 0
+>>> 1
+
+class Main : Object {
+  run [|
+    res := 5 plus: 3.
+    _ := self p: res.
+
+    res := 10 minus: 4.
+    _ := self p: res.
+
+    res := 3 multiplyBy: 4.
+    _ := self p: res.
+
+    res := 10 divBy: 3.
+    _ := self p: res.
+
+    res := 5 greaterThan: 3.
+    _ := self p: res.
+
+    res := 3 greaterThan: 5.
+    _ := self p: res.
+  ]
+
+  p: [:x|
+    _ := (x asString) print.
+  ]
+}

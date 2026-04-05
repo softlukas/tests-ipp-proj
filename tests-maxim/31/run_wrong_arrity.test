@@ -1,0 +1,11 @@
++++ CODE_31_RUN_ARGS
+*** Test of error with code 31 (Run method with arguments)
+!C! 0
+!I! 31
+>>> 1
+
+class Main : Object {
+  run: [:x |
+    _ := x print.
+  ]
+}

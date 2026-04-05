@@ -1,0 +1,20 @@
++++ CODE_EXAMPLES
+*** Test of error with code 33
+!C! 0
+!I! 0
+>>> 1
+
+class Main : Object {
+  run [|
+    a := A new.
+    b := [ :arg | y := self attr: arg. z := self. ].
+    c := a foo: b.
+    _ := (self attr) print.
+    _ := (c attr) print.
+  ]
+}
+class A : Object {
+  foo: [ :x |
+    u := x value: 'foo'. 
+  ]
+}

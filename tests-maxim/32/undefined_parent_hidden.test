@@ -1,0 +1,20 @@
++++ CODE_32
+*** Test of undefined variable
+!C! 0
+!I! 32
+>>> 1
+
+class Main : Object {
+
+  foo [|
+    a := x.
+  ]
+  run [|
+  ]
+}
+
+class Main2 : A {
+  foo [|
+    a := 1.
+  ]
+}

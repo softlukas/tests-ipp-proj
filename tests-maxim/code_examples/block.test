@@ -1,0 +1,21 @@
++++ CODE_EXAMPLES
+*** Test of error with code 33
+!C! 0
+!I! 0
+>>> 1
+
+
+class Main : Object {
+  run [|
+    a := self foo: 4. "a = instance 14"
+    _ := (a asString) print.
+    b := [ :x | _ := 42. ].
+    c := b value: 16. 
+    _ := (c asString) print.
+    d := 'ahoj' print.
+  ] 
+
+  foo: [ :x |
+    u := x plus: 10.
+  ]
+}
