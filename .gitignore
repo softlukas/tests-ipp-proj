@@ -3,3 +3,4 @@ out/
 *.json
 *.xml
 tmp_unused_tets/
+*.sol

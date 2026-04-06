@@ -1,0 +1,16 @@
++++ 
+*** 
+!C! 0
+!I! 33
+>>> 1
+
+class Main : Object {
+    mojePlus: [:a :b |
+        _ := a plus: b.
+    ]
+
+    run [|
+        "Metóda 'mojePlus:a:' očakáva 2 argumenty, posielame len 1"
+        _ := self mojePlus: 10.
+    ]
+}

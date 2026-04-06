@@ -1,0 +1,12 @@
++++ 
+*** 
+!C! 0
+!I! 32
+>>> 1
+
+class Main : Object {
+    run [|
+        "Premenná 'x' nebola nikdy inicializovaná priradením"
+        _ := x plus: 1.
+    ]
+}
