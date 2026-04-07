@@ -1,7 +1,7 @@
 +++ CODE_32
 *** Test of undefined variable
 !C! 0
-!I! 32
+!I! 0
 >>> 1
 
 class Main : Object {
