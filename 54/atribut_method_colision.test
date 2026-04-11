@@ -1,5 +1,5 @@
-+++ CODE_54
-*** Test of error with code 54 (Instance attribute collision with method)
+*** CODE_54
++++ Test of error with code 54 (Instance attribute collision with method)
 !C! 0
 !I! 54
 >>> 1

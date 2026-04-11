@@ -4,3 +4,4 @@ out/
 *.xml
 tmp_unused_tets/
 *.sol
+*.stderr
