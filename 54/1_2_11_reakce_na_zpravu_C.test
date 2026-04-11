@@ -1,7 +1,7 @@
-+++ 1_2_11_reakce_na_zpravu_C
-*** Vedlo by na vznik atributu, ale v nadtřídě je kolizní metoda
++++ CODE_54
+*** 1_2_11_reakce_na_zpravu_C
 !C! 0
-!I! 51
+!I! 54
 >>> 1
 
 class Parent : Object {
