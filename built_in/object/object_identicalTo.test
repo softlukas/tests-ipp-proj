@@ -18,11 +18,6 @@ class Main : Object {
     c := a identicalTo:b.
     _ := self p: c.
 
-    a := 1.
-    b := 1.
-    c := a identicalTo:b.
-    _ := self p: c.
-
     
   ]
 
