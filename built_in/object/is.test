@@ -1,7 +1,7 @@
 +++ BUILT_IN_OBJECT
 *** Test of built in function
 !C! 0
-!I! 0
+!I! 52
 >>> 1
 
 class Main : Object {

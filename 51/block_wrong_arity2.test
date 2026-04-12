@@ -1,7 +1,7 @@
 +++ CODE_51
 *** Test of error with code 51 (Block value message arity mismatch)
 !C! 0
-!I! 51
+!I! 54
 >>> 1
 
 class Main : Object {
