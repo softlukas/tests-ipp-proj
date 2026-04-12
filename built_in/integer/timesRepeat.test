@@ -6,11 +6,16 @@
 
 class Main : Object {
   run [|
-    block := [:x| y := self p: x.].
+    sum := 0.
+    block := [:x| 
+      y := self p: x.
+      sum := sum plus: x.
+    ].
 
     x := 10 timesRepeat: block.
     x := -1 timesRepeat: block.
     y := self p: x.
+    y := self p: sum.
   ]
 
   p: [:x|

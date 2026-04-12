@@ -1,4 +1,4 @@
-+++ CODE_51_BLOCK_ARITY_MISMATCH
++++ CODE_51
 *** Test of error with code 51 (Block value message arity mismatch)
 !C! 0
 !I! 51

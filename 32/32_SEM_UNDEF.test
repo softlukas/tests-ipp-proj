@@ -1,5 +1,5 @@
-+++ SEM UNDEF
-*** test pouzitia nedefinovanej premennej
++++  CODE_32
+*** 
 !C! 0
 !I! 32
 >>> 1

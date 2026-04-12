@@ -1,7 +1,7 @@
-+++ CODE_54
-*** 1_2_11_reakce_na_zpravu_C
++++ CODE_51
+*** 
 !C! 0
-!I! 54
+!I! 51
 >>> 1
 
 class Parent : Object {
@@ -16,14 +16,6 @@ class Parent : Object {
 
 class Main : Parent {
   run [| 
-    "tyto čtyři příkazy mají stejný efekt"
-    a := super value: super. b := super value: self.
-    c := self value: super. d := self value: self.
-
-    x := self p: 'val'. "CHYBA 54! Vedlo by na vznik atributu, ale už máme instanční metodu p, takže atribut nelze vytvořit."
-    x := self p. "hodnotou x bude 'foo'"
-
-    x := super something: 1. "CHYBA 54! Vedlo by na vznik atributu, ale v nadtřídě je kolizní metoda."
     x := super p. "CHYBA 51! Nadtřída nezná selektor p. (something se zatím neprovedla)"
 
     _ := super something. "nastaví atributy p, q a vypíše 'foo'"

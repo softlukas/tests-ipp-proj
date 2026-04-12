@@ -1,0 +1,19 @@
+class Main : Object {
+  run [|
+    num := 42.
+    str := num asString.
+    _ := str print.
+
+    num := -15.
+    str := num asString.
+    _ := str print.
+
+    num := 100.
+    num2 := num asInteger.
+    _ := self p: num2.
+  ]
+
+  p: [:x|
+    _ := (x asString) print.
+  ]
+}
