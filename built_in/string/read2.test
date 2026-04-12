@@ -1,0 +1,13 @@
++++ BUILT_IN_STRING
+*** Test of string to integer conversion
+!C! 0
+!I! 0
+>>> 1
+
+class Main : Object {
+  run "vstupní bod programu"
+  [ |
+      str := String read.
+      block := [|  _ := (str equalTo: '') not. ] whileTrue: [| _:= str print.  str := String read.].
+  ]
+}
