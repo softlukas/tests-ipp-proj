@@ -1,0 +1,15 @@
++++ CODE_34
+*** Kolízia parametra a lokálnej premennej
+!C! 0
+!I! 34
+>>> 1
+
+class Main : Object {
+    doSomething: [
+        :x | 
+        "CHYBA 34: Premenná x koliduje s názvom parametra x"
+        x := 1.
+    ]
+
+    run [ | _ := self doSomething: 10. ]
+}
